@@ -4,7 +4,7 @@ Data structures implemented in a couple different languages. With clear explanat
 Each folder will have an explanation of the data structure or algorithm along with pseudocode to implement them.
 
 ## Linked Lists
-  - [ ] Singly linked basic functions
+  - [x] Singly linked basic functions
   - [ ] Doubly linked basic functions
   - [ ] Circularly linked basic functions
   - [ ] Searching based on key or data
