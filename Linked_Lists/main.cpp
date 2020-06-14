@@ -1,6 +1,6 @@
 // Thomas McLean
 // June 13, 2020
-// Implementation of singly linked list.
+// main file for testing the linked lists.
 
 // ---INCLUDES---
 #include <iostream>

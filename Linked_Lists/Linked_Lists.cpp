@@ -9,7 +9,7 @@ using std::cout;   // Just want to load the ones I'm using
 using std::endl;
 
 // ---SINGLY LINKED LIST IMPLEMENATION---
-Singly::Singly(){           // When I construct my list I want the head and tail to be initialized to null
+Singly::Singly(){           // When I construct my list I want the head
     head = nullptr;
 }
 
