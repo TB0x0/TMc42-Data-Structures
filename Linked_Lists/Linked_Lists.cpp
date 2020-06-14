@@ -58,7 +58,7 @@ void Doubly::Push(int key, int data){
         head->key = key;
         head->data = data;
         head->next = nullptr;
-        head->prev = nullptr;
+        head->prev = nullptr;           // Here is our prev pointer
     }
     else {
         node* newNode = new node;
@@ -77,9 +77,10 @@ void Doubly::Pop(){
     else{
         node* tmp = head;
         cout << tmp->key << endl;
-        cout << tmp->data <<endl;
+        cout << tmp->data << endl;
         head = head->next;
-        delete tmp;
+        head->prev = nullptr;           // Now logically nothing exists behind the next node
+        delete tmp;                     // Free the memory of the node we popped
     }
 
 
