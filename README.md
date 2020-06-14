@@ -5,7 +5,7 @@ Each folder will have an explanation of the data structure or algorithm along wi
 
 ## Linked Lists
   - [x] Singly linked basic functions
-  - [ ] Doubly linked basic functions
+  - [x] Doubly linked basic functions
   - [ ] Circularly linked basic functions
   - [ ] Searching based on key or data
   - [ ] Sorting based on key or data
