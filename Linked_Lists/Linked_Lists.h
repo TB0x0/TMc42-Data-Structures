@@ -8,7 +8,7 @@
 
 // ---NODE STRUCT--- Here I define the structure of my node
 
-struct node{                    // This could also be done as a class in a separate .h file
+struct node{                    // This could also be done as a class, but easier as a struct
     int key;
     int data;
     node* next;
@@ -38,9 +38,12 @@ public:
  
 };
 
+
+// ---CIRCULARLY LINKED CLASS--- 
 class Circularly : public Singly{
 private:
     node* head;
+    node* follower;
 public:
     void Push(int key, int data);
     void Pop();

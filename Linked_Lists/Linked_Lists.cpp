@@ -92,6 +92,45 @@ void Doubly::Pop(){
         head->prev = nullptr;           // Now logically nothing exists behind the next node
         delete tmp;                     // Free the memory of the node we popped
     }
+}
 
+// ---CIRCULARLY LINKED LIST IMPLEMENTATION---
+void Circularly::Push(int key, int data){
+    if (head == nullptr){               // Start the first node
+        head = new node;
+        head->key = key;
+        head->data = data;
+        head->next = nullptr;
+        head->prev = nullptr;
+    }
+    else {                              // I need to know where and what my head node is so I don't want to overwrite it like I did before
+        node* newNode = new node;
+        newNode->key = key;
+        newNode->data = data;
+        newNode->next = head;
+        follower = newNode;             // Use the follower pointer to keep track of the last node
+        head->prev = newNode;           // The prev pointer of head will follow the most recent node
+        if (head->next = nullptr) {     // Only write the next pointer of head the first time it comes up
+            head->next = newNode;
+            newNode->prev = head;
+        }else {
+            newNode->prev = follower;
+        }
+    }
+}
+
+void Circularly::Pop(){                 // This will act the same as the others
+    if (head == nullptr){
+        std::cout << "\n!!! Cannot Pop() from an empty list !!!\n";
+    }
+    else{
+        node* tmp = head;
+        cout << tmp->key << endl;
+        cout << tmp->data << endl;
+        head = head->next;
+        head->prev = nullptr;           // Now logically nothing exists behind the next node
+        delete tmp;                     // Free the memory of the node we popped
+    }
 
 }
+
