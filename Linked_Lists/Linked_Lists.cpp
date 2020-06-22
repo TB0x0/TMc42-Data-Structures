@@ -42,6 +42,16 @@ void Singly::Pop(){
     }
 }
 
+void Singly::showList(){
+    node* tmp = head;
+    cout << "Key" << "\tData" <<endl;
+    while (tmp != nullptr){
+        cout << tmp->key;
+        cout << "   \t" << tmp->data << endl;
+        tmp = tmp->next;
+    }
+}
+
 Singly::~Singly(){
     while (head != nullptr){
         node* tmp = head;
