@@ -95,6 +95,7 @@ void Doubly::Pop(){
 }
 
 // ---CIRCULARLY LINKED LIST IMPLEMENTATION---
+
 void Circularly::Push(int key, int data){
     if (head == nullptr){               // Start the first node
         head = new node;
