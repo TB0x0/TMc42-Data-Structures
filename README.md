@@ -11,4 +11,11 @@ Each folder will have an explanation of the data structure or algorithm along wi
   - [ ] Sorting based on key or data
   - [ ] Deletion based on key or data
 
+## Queues
+  - [ ] Queues 101
+  - [ ] Simple Queue
+  - [ ] Circular Queue
+  - [ ] Priority Queue
+  - [ ] Double-ended Queue
+
 
